@@ -1,0 +1,123 @@
+
+body {
+    background-color: #1e1e1e;
+    color: #e6e6e6;
+    font-family: Courier New, Courier, monospace;
+    font-weight: bold;
+}
+
+.main {
+    margin: 0vw 2vw 2vw 2vw;
+    padding: 4vh 5vw;
+    border: solid #808080 2px;
+}
+
+.introduction {
+    padding: 1% 25%;
+    width: 50%;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.header {
+    padding: 2vh 5vw;
+    display: grid;
+    grid-template-areas: 'title buttons';
+    align-items: center;
+    grid-template-columns: 40% 60%;
+}
+
+.header-title {
+    grid-area: title;
+    font-size: 3vw;
+}
+
+    .header-title img {
+        width: 10%;
+        height: auto;
+        justify-items: center;
+    }
+
+    .header-title a {
+        color: white;
+        text-decoration: none;
+    }
+
+.header-buttons {
+    grid-area: buttons;
+    display: flex;
+    justify-self: end;
+}
+
+.header-button {
+    text-align: center;
+    font-size: 1.5vw;
+    color: white;
+    padding: 2vh;
+    text-decoration: none;
+}
+
+    .header-button a {
+        color: white;
+        border: solid #808080 2px;
+        padding: 1vw;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+        .header-button a:hover {
+            color: white;
+            text-decoration: none;
+            transform: scale(1.1);
+            transition: linear 0.1s;
+        }
+
+.resume {
+    padding-top: 5vh;
+}
+
+    .resume img {
+        width: auto;
+        height: auto;
+        margin-left: 25%;
+        margin-right: 25%;
+        text-align: center;
+        background-color: white;
+    }
+
+
+.project-section {
+    padding: 3vh 0vh;
+    display: grid;
+    grid-template-areas: 'title media' 'summary media';
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 4vw;
+}
+
+.project-title {
+    font-size: 2vw;
+    grid-area: title;
+}
+
+    .project-title a {
+        color: white;
+        text-decoration: underline;
+    }
+
+        .project-title a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+.project-media {
+    grid-area: media;
+}
+
+    .project-media img {
+        width: 90%;
+        height: auto;
+    }
+
+.project-summary {
+    grid-area: summary;
+}
