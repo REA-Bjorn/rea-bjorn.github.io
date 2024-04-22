@@ -3,7 +3,6 @@ body {
     background-color: #1e1e1e;
     color: #e6e6e6;
     font-family: Courier New, Courier, monospace;
-    font-weight: bold;
 }
 
 .main {
@@ -25,6 +24,7 @@ body {
     grid-template-areas: 'title buttons';
     align-items: center;
     grid-template-columns: 40% 60%;
+    font-weight: bold;
 }
 
 .header-title {
@@ -72,25 +72,12 @@ body {
             transition: linear 0.1s;
         }
 
-.resume {
-    padding-top: 5vh;
-}
-
-    .resume img {
-        width: auto;
-        height: auto;
-        margin-left: 25%;
-        margin-right: 25%;
-        text-align: center;
-        background-color: white;
-    }
-
-
 .project-section {
     padding: 3vh 0vh;
     display: grid;
     grid-template-areas: 'title media' 'summary media';
     grid-template-columns: 50% 50%;
+    grid-template-rows: 5vh auto;
     grid-column-gap: 4vw;
 }
 
@@ -109,6 +96,10 @@ body {
             text-decoration: underline;
         }
 
+.project-summary {
+    grid-area: summary;
+}
+
 .project-media {
     grid-area: media;
 }
@@ -118,6 +109,19 @@ body {
         height: auto;
     }
 
-.project-summary {
-    grid-area: summary;
+.resume {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .resume img {
+        background-color: white;
+        width: 50vw;
+    }
+
+
+@font-face {
+    font-family: JHFont;
+    src: url(../jh_fallout-webfont.ttf);
 }
